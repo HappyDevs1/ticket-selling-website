@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket</title>
+  <link rel="stylesheet" href="../styles/ticket.css">
+</head>
+<body>
+  <nav>
+    <ul class="side-bar">
+      <li class="close-hamburger-icon"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a> </li>
+      <li> <a href="../html/home.html">Home</a> </li>
+      <li> <a href="../html/about.html">About</a> </li>
+      <li> <a href="../html/ticket.html">Tickets</a> </li>
+      <li> <a href="../html/contact.html">Contact</a> </li>
+    </ul>
+
+    <ul>
+      <li> <a href="#">
+        <img class="nav-logo" src="#">
+      </a> </li>
+      <li class="hideOnMobile"> <a href="../html/home.html">Home</a> </li>
+      <li class="hideOnMobile"> <a href="../html/about.html">About</a> </li>
+      <li class="hideOnMobile"> <a href="../html/ticket.html">Tickets</a> </li>
+      <li class="hideOnMobile"> <a href="../html/contact.html">Contact</a> </li>
+      <li class="open-hamburger-icon"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  
+  <div class="ticket-page-container">
+    <div class="ticket-page-title">Early Birds Tickets Are Available, Don't Miss Out!</div>
+    <div class="content-seperator">
+      <div class="left-side">
+        <img src="../images/Ticket-picture.png" alt="image-of-a-ticket" class="ticket-image">
+      </div>
+      <div class="right-side">
+        <div class="right-side-info">
+          Early birds tickets are still available, to purchase your tickets click the button below. Note that there is only a limited tickets of early birds and they are available on a first come, first serve basis.
+        </div>
+        <div class="button-div">
+          <button class="getTicketBtn">Get Tickets</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div class="modal-container">
+
+      <div class="header">
+        <div class="modal-title">Shopping Cart</div>
+        <div class="remove-all">Remove all</div>
+      </div>
+
+      <div class="cart-body">
+        <div class="cart-ticket-image">
+          <img src="../images/Ticket-picture.png" alt="picture-of-a-ticket" class="product-image">
+        </div>
+        <div class="product-description-container">
+          <div class="description-info">Early Bird Tickets</div>
+        </div>
+        <div class="cart-buttons">
+          <div id="decrement-btn" class="button">
+            <img src="../images/decement button.png" alt="">
+          </div>
+          <div id="cart-quantity" class="quantity-num">1</div>
+          <div id="increment-btn" class="button">
+            <img src="../images/increment button.png" alt="">
+          </div>
+        </div>
+        <div class="product-details">
+          <div class="ticket-price">R30.00</div>
+          <button class="cart-btn" id="add-to-cart-btn">Add To Cart</button>
+        </div>
+      </div>
+
+      <hr class="horizontal-line">
+
+      <div class="cart-summary-container">
+        <div class="top-section">
+          <div class="left">
+            <div class="subtotal-text">Sub-Total</div>
+            <div class="checkout-quantity">1 item</div>
+          </div>
+          <div class="right">
+            <div id="checkout-price" class="checkout-amount">R30.00</div>
+          </div>
+        </div>
+        <div class="bottom-section">
+          <button class="checkout-button">Checkout</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <script src="../scripts/ticket.js"></script>
+</body>
+</html>

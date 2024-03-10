@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(../images/alfonso-scarpa-GSS0pHHDkAk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-image: fill 0 linear-gradient(#0001, #000);
+}
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: lightgray;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.392);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.side-bar li {
+  width: 100%;
+}
+.side-bar a {
+  width: 100%;
+}
+.close-hamburger-icon {
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile {
+    display: none;
+  }
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+}
+.about-title {
+  color: white;
+  font-size: clamp(20px, 6vw, 60px);
+  text-shadow: 2px 2px 8px black;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.event-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 10px 3px rgba(255, 255, 255, 0.5);
+  border-radius: 2vw;
+  width: 40%;
+  margin: 3vw 0;
+  padding: 2vw;
+  flex-shrink: 0; /* Set to 0 to prevent shrinking */
+  min-width: 70vw;
+}
+.event-details-title {
+  color: rgb(255, 0, 0);
+  font-size: clamp(18px, 5vw, 53px);
+  text-shadow: 2px 2px 8px black;
+  font-weight: bold;
+  margin: 2vw 0;
+}
+.event-detail {
+  color: white;
+  font-size: clamp(16px, 3vw, 25px);
+  text-shadow: 2px 2px 8px black;
+  margin: 0.5vw;
+}

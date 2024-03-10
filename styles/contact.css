@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(../images/alfonso-scarpa-GSS0pHHDkAk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-image: fill 0 linear-gradient(#0001, #000);
+}
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: lightgray;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.392);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.side-bar li {
+  width: 100%;
+}
+.side-bar a {
+  width: 100%;
+}
+.close-hamburger-icon {
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile {
+    display: none;
+  }
+}
+.contact-title {
+  font-weight: bold;
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-size: clamp(20px, 8vw, 50px);
+  display: flex;
+  justify-content: center;
+}
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 6rem;
+  padding: 5vw 10vw;
+  background-color: #ffffff;
+  border-radius: 1vw;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.form-title {
+  font-size: clamp(17px, 7rem, 40px);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4vw;
+}
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+.email-input,
+.message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+.send-form-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.send-form-button:hover {
+  background-color: #0056b3;
+}
+.social-media-icon-container {
+  display: flex;
+  align-items: center;justify-content: center;
+}
+.social-media-title {
+  color: white;
+  text-shadow: 2px 2px 8px black;
+  font-size: clamp(15px, 5rem, 30px);
+  font-weight: bold;
+  margin-left: 7vw;
+  margin-top: 5vw;
+}
+.social-media-icons {
+  display: flex;
+  column-gap: clamp(5px, 5vw, 70px);
+  margin-left: 7vw;
+  margin-top: 2vw;
+}
+.icon {
+  height:  clamp(30px, 9vw, 60px);
+}
+.icon:hover {
+  background-color: gray;
+  border-radius: 5vw;
+  cursor: pointer;
+}
+.icon:active {
+  background-color: white;
+}

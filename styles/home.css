@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-height: 100vh;
+  background-image: url(../images/alfonso-scarpa-GSS0pHHDkAk-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  font-family: Arial, Helvetica, sans-serif;
+  border-image: fill 0 linear-gradient(#0001, #000);
+}
+nav {
+  background-color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+nav li {
+  height: 50px;
+}
+nav a {
+  height: 100%;
+  padding: 0 30px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+}
+nav a:hover {
+  background-color: lightgray;
+}
+nav li:first-child {
+  margin-right: auto;
+}
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0.392);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.side-bar li {
+  width: 100%;
+}
+.side-bar a {
+  width: 100%;
+}
+.close-hamburger-icon {
+  display: none;
+}
+@media(max-width: 800px){
+  .hideOnMobile {
+    display: none;
+  }
+}
+.body-container {
+  margin: 5vw;
+}
+.home-title {
+  color: white;
+  font-size: clamp(20px, 9vw, 110px);
+  font-weight: bold;
+  text-shadow: 2px 2px 8px black;
+}
+.home-slogan {
+  color: rgb(178, 178, 178);
+  font-size: clamp(20px, 3vw, 30px );
+  text-shadow: 1px 1px 8px black;
+}
+.ticket-button-container {
+  display: flex;
+  margin: 5vw;
+  align-items: center;
+}
+.ticket-info-text {
+  color: red;
+  font-size: clamp(17px, 4vw, 30px);
+  text-shadow: 1px 1px 8px black;
+}
+.button-container {
+  margin-left: 2vw;
+}
+.ticket-button {
+  background-color: rgb(209, 0, 0);
+  color: white;
+  border: none;
+  border-radius: 0.4vw;
+  padding: 0.5vw 2vw;
+  font-size: clamp(15px, 2vw, 20px);
+  font-weight: bold;
+  text-shadow: 1px 1px 8px black;
+  text-decoration: none;
+}.ticket-button:hover {
+  cursor: pointer;
+}
