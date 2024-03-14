@@ -165,6 +165,7 @@ color: red;
 .cart-body {
   display: flex;
   justify-content: space-between;
+  margin: ;
 }
 .product-image {
   height:
@@ -191,7 +192,6 @@ color: red;
 }
 .button {
   font-size: clamp(20px, 5vw, 30px);
-  background-color: rgb(177, 177, 177);
   padding: 0.5vw;
   display: flex;
   align-items: center;
@@ -200,9 +200,9 @@ color: red;
   width: 2vw;
   border-radius: 1.5vw;
 }
-.button:hover {
-  background-color: gray;
-  cursor: pointer;
+.adjust-quantity {
+  height: clamp(15px, 6vw, 40px);
+  width: clamp(15px, 6vw, 40px);
 }
 .product-details {
   display: flex;
@@ -212,6 +212,7 @@ color: red;
 .ticket-price {
   font-weight: bold;
   font-size: clamp(20px, 1.7vw, 30px);
+  margin: 1vw 0;
 }
 .cart-btn {
   background-color: rgb(0, 102, 255);
@@ -229,6 +230,9 @@ color: red;
   background-color: rgb(0, 132, 255);
   cursor: pointer;
 }
+.horizontal-line {
+  margin: 3vw 0;
+}
 .cart-summary-container {
   display: flex;
   flex-direction: column;
@@ -236,11 +240,13 @@ color: red;
 }
 .top-section {
   display: flex;
-  row-gap: 20%;
+  justify-content: space-between;
+  margin: 2vw;
 }
 .left {
   display: flex;
   flex-direction: column;
+  margin-right: 2vw;
 }
 .subtotal-text {
   font-weight: bold;
@@ -250,7 +256,8 @@ color: red;
   color: rgb(100, 100, 100);
 }
 .right {
-
+  font-weight: bold;
+  font-size: clamp(20px, 1.7vw, 30px);
 }
 .checkout-amount {
 

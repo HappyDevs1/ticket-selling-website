@@ -86,9 +86,10 @@ nav li:first-child {
   background-color: #ffffff;
   border-radius: 1vw;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 60vw;
 }
 .form-title {
-  font-size: clamp(17px, 7rem, 40px);
+  font-size: clamp(15px, 5rem, 30px);
   font-weight: bold;
   display: flex;
   justify-content: center;

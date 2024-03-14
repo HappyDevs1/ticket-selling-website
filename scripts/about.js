@@ -2,6 +2,8 @@ const sidebar = document.querySelector('.side-bar');
       const hamburger = document.querySelector('.open-hamburger-icon');
       const closeIcon = document.querySelector('.close-hamburger-icon');
 
+      sidebar.style.display ="none";
+
       hamburger.addEventListener('click', () => {
         if (sidebar.style.display === 'none') {
           sidebar.style.display = 'block';
@@ -9,6 +11,8 @@ const sidebar = document.querySelector('.side-bar');
           closeIcon.style.display = 'block';
         } else {
           sidebar.style.display = 'none';
+          hamburger.style.display = "block";
+          closeIcon.style.display = "none";
         }
       });
 

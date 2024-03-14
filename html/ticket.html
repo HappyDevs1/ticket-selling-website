@@ -27,7 +27,6 @@
       <li class="open-hamburger-icon"> <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
     </ul>
   </nav>
-
   
   <div class="ticket-page-container">
     <div class="ticket-page-title">Early Birds Tickets Are Available, Don't Miss Out!</div>
@@ -53,7 +52,7 @@
 
       <div class="header">
         <div class="modal-title">Shopping Cart</div>
-        <div class="remove-all">Remove all</div>
+        <div id="remove-all-items" class="remove-all">Remove all</div>
       </div>
 
       <div class="cart-body">
@@ -65,15 +64,15 @@
         </div>
         <div class="cart-buttons">
           <div id="decrement-btn" class="button">
-            <img src="../images/decement button.png" alt="">
+            <img src="../images/decement button.png" class="adjust-quantity">
           </div>
           <div id="cart-quantity" class="quantity-num">1</div>
           <div id="increment-btn" class="button">
-            <img src="../images/increment button.png" alt="">
+            <img src="../images/increment button.png" class="adjust-quantity">
           </div>
         </div>
         <div class="product-details">
-          <div class="ticket-price">R30.00</div>
+          <div id="ticket-price" class="ticket-price">R30.00</div>
           <button class="cart-btn" id="add-to-cart-btn">Add To Cart</button>
         </div>
       </div>
@@ -84,7 +83,7 @@
         <div class="top-section">
           <div class="left">
             <div class="subtotal-text">Sub-Total</div>
-            <div class="checkout-quantity">1 item</div>
+            <div  id="checkout-qty" class="checkout-quantity">1 item</div>
           </div>
           <div class="right">
             <div id="checkout-price" class="checkout-amount">R30.00</div>

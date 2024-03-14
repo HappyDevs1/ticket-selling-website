@@ -1,22 +1,26 @@
-const sidebar = document.querySelector(".side-bar");
-const hamburger = document.querySelector(".open-hamburger-icon");
-const closeIcon = document.querySelector(".close-hamburger-icon");
+const sidebar = document.querySelector('.side-bar');
+      const hamburger = document.querySelector('.open-hamburger-icon');
+      const closeIcon = document.querySelector('.close-hamburger-icon');
 
-hamburger.addEventListener("click", () => {
-  if (sidebar.style.display === "none") {
-    sidebar.style.display = "block";
-    hamburger.style.display = "none";
-    closeIcon.style.display = "block";
-  } else {
-    sidebar.style.display = "none";
-  }
-});
+      sidebar.style.display ="none";
 
-closeIcon.addEventListener("click", () => {
-  sidebar.style.display = "none";
-  hamburger.style.display = "block";
-  closeIcon.style.display = "none";
-});
+      hamburger.addEventListener('click', () => {
+        if (sidebar.style.display === 'none') {
+          sidebar.style.display = 'block';
+          hamburger.style.display = 'none';
+          closeIcon.style.display = 'block';
+        } else {
+          sidebar.style.display = 'none';
+          hamburger.style.display = "block";
+          closeIcon.style.display = "none";
+        }
+      });
+
+      closeIcon.addEventListener ('click', () => {
+        sidebar.style.display ='none';
+        hamburger.style.display = 'block';
+        closeIcon.style.display = 'none';
+      });
 
 //Modal
 // Get the modal element
@@ -48,7 +52,7 @@ window.onclick = function (event) {
 //Code for the cart
 const decrementBtn = document.getElementById("decrement-btn");
 const incrementBtn = document.getElementById("increment-btn");
-let quantityDisplay = document.getElementById("cart-quantity");
+const quantityDisplay = document.getElementById("cart-quantity");
 
 let quantity = 1;
 
@@ -64,7 +68,43 @@ incrementBtn.addEventListener("click", () => {
   quantityDisplay.innerHTML = `${quantity}`;
 });
 
-const addToCartBtn = document.getElementById("add-to-cart-btn");
-addToCartBtn.addEventListener("click", () => {
-  console.log("Product added to cart with quantity:", quantity);
-})
+let addToCartBtn = document.getElementById("add-to-cart-btn");
+
+addToCartBtn.addEventListener("click", updatePrice);
+addToCartBtn.addEventListener("click", updateTotal);
+addToCartBtn.addEventListener("click", updateQuantity);
+
+const price = document.getElementById("ticket-price");
+const totalPrice = document.getElementById("checkout-price");
+const totalQty = document.getElementById("checkout-qty");
+const remove = document.getElementById("remove-all-items");
+
+let ticketPrice = 30;
+let result;
+
+function updatePrice() {
+  result = ticketPrice * quantity;
+  price.innerHTML = `R${result}.00`;
+};
+function updateTotal() {
+  totalPrice.innerHTML = `R${result}.00`;
+};
+function updateQuantity() {
+  if (quantity === 1) {
+    totalQty.innerHTML = `${quantity} item`;
+  } else {
+    totalQty.innerHTML = `${quantity} items`;
+  }
+};
+
+function removeAll() {
+  quantity = 1;
+  result = 30;
+
+  price.innerHTML = `R${result}.00`;
+  totalPrice.innerHTML = `R${result}.00`;
+  totalQty.innerHTML = `${quantity} item`;
+  quantityDisplay.innerHTML = `${quantity}`;
+}
+
+remove.addEventListener("click", removeAll);
