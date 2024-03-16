@@ -41,6 +41,11 @@ nav a:hover {
 nav li:first-child {
   margin-right: auto;
 }
+.nav-logo {
+  align-items: start;
+  height: clamp(50px, 5vw, 50px);
+  width: 100%;
+}
 .side-bar {
   position: fixed;
   top: 0;
