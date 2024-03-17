@@ -1,26 +1,26 @@
-const sidebar = document.querySelector('.side-bar');
-      const hamburger = document.querySelector('.open-hamburger-icon');
-      const closeIcon = document.querySelector('.close-hamburger-icon');
+const sidebar = document.querySelector(".side-bar");
+const hamburger = document.querySelector(".open-hamburger-icon");
+const closeIcon = document.querySelector(".close-hamburger-icon");
 
-      sidebar.style.display ="none";
+sidebar.style.display = "none";
 
-      hamburger.addEventListener('click', () => {
-        if (sidebar.style.display === 'none') {
-          sidebar.style.display = 'block';
-          hamburger.style.display = 'none';
-          closeIcon.style.display = 'block';
-        } else {
-          sidebar.style.display = 'none';
-          hamburger.style.display = "block";
-          closeIcon.style.display = "none";
-        }
-      });
+hamburger.addEventListener("click", () => {
+  if (sidebar.style.display === "none") {
+    sidebar.style.display = "block";
+    hamburger.style.display = "none";
+    closeIcon.style.display = "block";
+  } else {
+    sidebar.style.display = "none";
+    hamburger.style.display = "block";
+    closeIcon.style.display = "none";
+  }
+});
 
-      closeIcon.addEventListener ('click', () => {
-        sidebar.style.display ='none';
-        hamburger.style.display = 'block';
-        closeIcon.style.display = 'none';
-      });
+closeIcon.addEventListener("click", () => {
+  sidebar.style.display = "none";
+  hamburger.style.display = "block";
+  closeIcon.style.display = "none";
+});
 
 //Modal
 // Get the modal element
@@ -85,17 +85,21 @@ let result;
 function updatePrice() {
   result = ticketPrice * quantity;
   price.innerHTML = `R${result}.00`;
-};
+
+  let amountInput = document.querySelector('input[name="amount"]');
+
+  amountInput.value = result;
+}
 function updateTotal() {
   totalPrice.innerHTML = `R${result}.00`;
-};
+}
 function updateQuantity() {
   if (quantity === 1) {
     totalQty.innerHTML = `${quantity} item`;
   } else {
     totalQty.innerHTML = `${quantity} items`;
   }
-};
+}
 
 function removeAll() {
   quantity = 1;
@@ -107,4 +111,7 @@ function removeAll() {
   quantityDisplay.innerHTML = `${quantity}`;
 }
 
-remove.addEventListener("click", removeAll);
+//Code for the checkout form
+document.getElementById("checkOutBtn").addEventListener("click", function () {
+  document.getElementById("checkoutModal").style.display = "block";
+});

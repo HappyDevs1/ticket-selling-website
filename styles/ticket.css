@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 body {
   min-height: 100vh;
   background-image: url(../images/alfonso-scarpa-GSS0pHHDkAk-unsplash.jpg);
@@ -11,10 +12,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   border-image: fill 0 linear-gradient(#0001, #000);
 }
+
 nav {
   background-color: white;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 nav ul {
   width: 100%;
   list-style: none;
@@ -23,9 +26,11 @@ nav ul {
   justify-content: flex-end;
   align-items: center;
 }
+
 nav li {
   height: 50px;
 }
+
 nav a {
   height: 100%;
   padding: 0 30px;
@@ -35,17 +40,21 @@ nav a {
   color: black;
   font-weight: bold;
 }
+
 nav a:hover {
   background-color: lightgray;
 }
+
 nav li:first-child {
   margin-right: auto;
 }
+
 .nav-logo {
   align-items: start;
   height: clamp(50px, 5vw, 50px);
   width: 100%;
 }
+
 .side-bar {
   position: fixed;
   top: 0;
@@ -61,20 +70,25 @@ nav li:first-child {
   align-items: flex-start;
   justify-content: flex-start;
 }
+
 .side-bar li {
   width: 100%;
 }
+
 .side-bar a {
   width: 100%;
 }
+
 .close-hamburger-icon {
   display: none;
 }
-@media(max-width: 800px){
+
+@media (max-width: 800px) {
   .hideOnMobile {
     display: none;
   }
 }
+
 /* The Modal */
 .modal {
   display: none;
@@ -84,7 +98,7 @@ nav li:first-child {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Modal Content */
@@ -113,33 +127,40 @@ nav li:first-child {
   text-decoration: none;
   cursor: pointer;
 }
+
 .ticket-page-container {
   margin: 2vw;
 }
+
 .ticket-page-title {
   color: white;
   font-size: clamp(20px, 9vw, 55px);
   font-weight: bold;
   text-shadow: 2px 2px 8px black;
 }
+
 .content-seperator {
   display: flex;
   flex-direction: row;
   column-gap: 2vw;
   margin: 3vw;
 }
+
 .ticket-image {
   height: clamp(50px, 14vw, 400px);
   box-shadow: 2px 2px 8px 3px black;
 }
+
 .right-side-info {
   color: rgb(207, 207, 207);
   text-shadow: 2px 2px 8px black;
   font-size: clamp(16px, 3vw, 25px);
 }
+
 .button-div {
   margin-top: 3vw;
 }
+
 .getTicketBtn {
   background-color: rgb(209, 0, 0);
   color: white;
@@ -151,33 +172,40 @@ nav li:first-child {
   text-shadow: 1px 1px 8px black;
   text-decoration: none;
 }
+
 .getTicketBtn:hover {
   cursor: pointer;
 }
+
 .header {
   display: flex;
   justify-content: space-between;
 }
+
 .modal-title {
   font-size: clamp(25px, 2.5vw, 35px);
   font-weight: bold;
 }
+
 .remove-all {
-margin-right: 5vw;
-text-decoration: underline;
-color: red;
-font-size: clamp(14px, 1.2vw, 20px);
+  margin-right: 5vw;
+  text-decoration: underline;
+  color: red;
+  font-size: clamp(14px, 1.2vw, 20px);
 }
+
 .remove-all:hover {
   color: maroon;
   cursor: pointer;
 }
+
 .cart-body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.2vw;
   margin-top: 1vw;
 }
+
 .cart-ticket-image {
   align-items: center;
   display: flex;
@@ -185,15 +213,17 @@ font-size: clamp(14px, 1.2vw, 20px);
   align-items: center;
   column-gap: 3vw;
 }
+
 .product-image {
-  height:
-  clamp(30px, 10vw, 70px);
+  height: clamp(30px, 10vw, 70px);
 }
+
 .product-description-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .description-info {
   font-weight: bold;
   font-size: clamp(17px, 1.7vw, 30px);
@@ -202,17 +232,19 @@ font-size: clamp(14px, 1.2vw, 20px);
   align-items: center;
   column-gap: 3vw;
 }
+
 .cart-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 3vw;
-
 }
+
 .quantity-num {
   font-weight: bold;
   font-size: clamp(20px, 1.5vw, 25px);
 }
+
 .button {
   font-size: clamp(20px, 5vw, 30px);
   padding: 0.5vw;
@@ -224,10 +256,12 @@ font-size: clamp(14px, 1.2vw, 20px);
   width: 2vw;
   border-radius: 1.5vw;
 }
+
 .adjust-quantity {
   height: clamp(15px, 6vw, 40px);
   width: clamp(15px, 6vw, 40px);
 }
+
 .product-details {
   display: flex;
   flex-direction: column;
@@ -237,11 +271,13 @@ font-size: clamp(14px, 1.2vw, 20px);
   align-items: center;
   column-gap: 3vw;
 }
+
 .ticket-price {
   font-weight: bold;
   font-size: clamp(20px, 1.7vw, 30px);
   margin: 1vw 0;
 }
+
 .cart-btn {
   background-color: rgb(0, 102, 255);
   color: white;
@@ -254,45 +290,54 @@ font-size: clamp(14px, 1.2vw, 20px);
   text-decoration: none;
   vertical-align: middle;
 }
+
 .cart-btn:hover {
   background-color: rgb(0, 132, 255);
   cursor: pointer;
 }
+
 .horizontal-line {
   margin: 3vw 0;
 }
+
 .cart-summary-container {
   display: flex;
   flex-direction: column;
   align-items: end;
 }
+
 .top-section {
   display: flex;
   justify-content: space-between;
   margin: 2vw;
 }
+
 .left {
   display: flex;
   flex-direction: column;
   margin-right: 2vw;
 }
+
 .subtotal-text {
   font-weight: bold;
   font-size: 20px;
 }
+
 .checkout-quantity {
   color: rgb(100, 100, 100);
 }
+
 .right {
   font-weight: bold;
   font-size: clamp(20px, 1.7vw, 30px);
 }
+
 .checkout-amount {
-
 }
+
 .bottom-section {
-
 }
+
 .checkout-button {
   background-color: rgba(0, 89, 255, 0.692);
   font-weight: bold;
@@ -300,7 +345,27 @@ font-size: clamp(14px, 1.2vw, 20px);
   border-radius: 2vw;
   padding: 0.5vw 4vw;
 }
+
 .checkout-button:hover {
   background-color: rgb(0, 119, 255);
   cursor: pointer;
+}
+
+.pay-now-button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  align-items: flex-end;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pay-now-button:hover {
+  background-color: #45a049;
 }
